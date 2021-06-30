@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/main.css" crossorigin="anonymous">
+
+    <title>To do list</title>
+  </head>
+  <body>
+	<div id="site">
+		
+		<div id="header">
+			<h1>it's <%= kindofDay %>!</h1>
+		</div>
+		<div class="box" id="addtask">
+			<form  action="/index.html" method="post">
+				<input type="text" name="task" placeholder="enter your new task" autocomplete="off">
+				<button type="submit" name="button">+</button>
+			</form>
+		</div>
+		<div class="box" id="tasks" >
+			<div id="item">
+				<% for (var i= 0; i<addNewTasks.length; i++){ %>
+				<input type="checkbox">
+				<p>  <%= addNewTasks[i] %></p>
+				<%} %>
+			</div>
+		</div>
+		
+	
+	</div>
+    
+
+   <script src="to-do-app\index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+body{
+	background-color:beige;
+	font-family:helvetica, sans-serif;
+}
+#site{
+	display:grid;
+	width:100vw;
+	height:100vh;
+	grid-template-columns:1fr;
+	grid-template-rows:auto auto auto;
+	grid-template-areas:"title"
+						"items"
+						"form";
+	place-items:center;
+}
+.box{
+	border:1px teal solid;
+	box-shadow:3px 3px 3px lightgray;
+	background-color:white;
+}
+
+#header{
+	width:100vw;
+	font-size:1rem;
+	text-align:center;
+	color:teal;
+	height:50px;
+	grid-area:"title";
+}
+#addtask{
+	border-radius:10px;
+	border-bottom:1px green solid;
+	width:50vw;
+	height:auto;
+	display:grid;
+	place-items:center;
+	grid-area:"form";
+}
+form{
+	display:grid;
+	width:40vw;
+	height:auto;
+	place-items:center;
+}
+
+label{
+	display:block;
+	color:teal;
+	margin-top:30px;
+	text-align:center;
+}
+
+#tasks{
+	width:50vw;
+	height:auto;
+	display:grid;
+	place-items:center;
+	background-color:white;
+	color:teal;
+	border:1px teal solid;
+	border-radius:10px;
+	
+}
+#addtask input{
+	width:30vw;
+	height:50px;
+	border-radius:10px;
+	border:1px teal solid;
+	margin-top:50px;
+}
+
+#item{
+	display:grid;
+	grid-template-columns:auto auto;
+	grid-template-rows:1fr;
+	place-items:center;
+	grid-template-areas:"check text";
+}
+input:checked+p{
+	text-decoration:line-through;
+}
+input[type=checkbox]{
+	grid-area:"check";
+	margin:20px;
+	width:30px;
+	height:30px;
+}
+
+#item p{
+	width:30vw;
+	height:30px;
+	background-color:white;
+	color:teal;
+	border-bottom:1px teal solid;
+	border-radius:5px;
+	text-align:center;
+}
+#item p:last-child{
+	width:30vw;
+	height:50px;
+	grid-area:"text";
+	height:30px;
+	background-color:white;
+	color:teal;
+	border-bottom:2px red solid;
+	border-radius:5px;
+	text-align:center;
+}
+button{
+	border-radius:50%;
+	width:50px;
+	height:50px;
+	border:1px teal solid;
+	background-color:teal;
+	margin-top:10px;
+	margin-bottom:10px;
+	display:grid;
+	place-items:center;
+	color:white;
+	font-size:30px;
+}
+
+
+
+

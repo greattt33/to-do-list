@@ -1,0 +1,38 @@
+body{
+	background-color:beige;
+	font-family:helvetica, sans-serif;
+}
+#site{
+	display:grid;
+	width:100vw;
+	height:100vh;
+	place-items:center;
+}
+
+#header{
+	font-size:30px;
+	color:teal;
+	height:50px;
+}
+#addtask{
+	border-radius:10px;
+	border:1px green solid;
+	width:30vw;
+	height:50px;
+}
+
+#task{
+	width:50vw;
+	height:auto;
+	border:1px green solid;
+	border-radius:10px;
+	box-shadow:5px 5px gray;
+}
+#list p{
+	width:30vw;
+	height:30px;
+	border:1px green solid;
+	border-radius:10px;
+	box-shadow:5px 5px gray;
+}
+
