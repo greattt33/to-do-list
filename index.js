@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
 var newTasks=[];
 app.set("view engine","ejs");
-app.get("/index.html",(req,res)=>{
+app.get("/",(req,res)=>{
 			var today= new Date();
 			var option={
 				weekday:"long",
@@ -26,7 +26,7 @@ app.get("/index.html",(req,res)=>{
 					addNewTasks:newTasks
 				})
 });
-app.post("/index.html",(req,res)=>{
+app.post("/",(req,res)=>{
 	var newTask= req.body.task;
 	newTasks.push(newTask);
 	res.redirect("/index.html")
