@@ -29,7 +29,7 @@ app.get("/",(req,res)=>{
 app.post("/",(req,res)=>{
 	var newTask= req.body.task;
 	newTasks.push(newTask);
-	res.redirect("/index.html")
+	res.redirect("/")
 });
 
 
